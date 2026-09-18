@@ -10,6 +10,8 @@
 Projeto desenvolvido durante os estudos de Node.js e desenvolvimento Fullstack.
 Esta aplicação full-stack permite que o usuário digite um link, processe os dados via Express.js no backend utilizando o pacote qr-image, gere uma imagem PNG e utilize recursos avançados do front-end (como a Clipboard API) na página de resultados.
 
+---
+
 > [!IMPORTANT]
 > **Antes de rodar as aplicações:**
 > 1. Instale as dependências executando no terminal:
