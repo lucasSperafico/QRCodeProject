@@ -1,0 +1,129 @@
+:root {
+  --accent: #2563eb;
+  --border: #ccc;
+  --muted: #666;
+}
+
+/* Reset básico: remove margens e padding padrão do navegador */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: sans-serif;
+  background: #e6e4e4;
+  color: #222;
+  padding: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ── Cabeçalho ──────────────────────────────────────────── */
+.site-header {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+}
+
+.site-header a {
+  color: white;
+}
+
+.url-section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#url-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+#url-submit {
+  padding: 0.5rem 1.2rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+/* ── QR Code ───────────────────────────────────────────── */
+
+.qr-section {
+  background: #2563eb;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.qr-img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+
+  background: #222;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* ── Botões ────────────────────────────────────────────── */
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-row button {
+  width: 180px;
+  padding: 0.75rem 1rem;
+
+  background: #ffffff;
+  color: #222;
+
+  border: 2px solid #222;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 1rem;
+
+  transition: 0.2s;
+}
+
+.button-row button:hover {
+  background: #222;
+  color: white;
+}
+
