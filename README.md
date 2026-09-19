@@ -8,21 +8,30 @@
 
 ## 🌐 Informações
 Projeto desenvolvido durante os estudos de Node.js e desenvolvimento Fullstack.
-Esta aplicação full-stack permite que o usuário digite um link, processe os dados via Express.js no backend utilizando o pacote qr-image, gere uma imagem PNG e utilize recursos avançados do front-end (como a Clipboard API) na página de resultados.
+Esta aplicação full-stack permite que o usuário digite um link, processe os dados via Express.js no backend utilizando o pacote qr-image, gere uma imagem PNG e utilize recursos avançados do front-end na página de resultados. O projeto foi expandido para incluir funcionalidades modernas de interação do usuário utilizando Web APIs nativas.
 
 > [!IMPORTANT]
 > **Antes de rodar as aplicações:**
-> 1. Instale as dependências executando no terminal:
+>
+>  1. Clone o repositório:
+>    ```bash
+>    git clone https://github.com/lucasSperafico/QRCodeProject.git
+>    ```
+> 2. Instale as dependências executando no terminal:
+>    ```bash
+>    cd NOME_DO_REPOSITORIO
+>    ```
+> 3. Instale as dependências executando no terminal:
 >    ```bash
 >    npm install
 >    ```
-> 2. Inicialize o projeto com um dos comandos abaixo:
+> 4. Inicialize o projeto com um dos comandos abaixo:
 >    ```bash
 >    node index.js
 >    # ou para reinício automático:
 >    nodemon index.js
 >    ```
-> 3. Após isso abra no seu navegador:
+> 5. Acessa no seu navegador:
 >    ```bash
 >    localhost:3000/
 >    ```
@@ -41,7 +50,7 @@ Permite salvar a imagem localmente através de um botão dedicado.
 ### 3. Cópia Inteligente:
 Utiliza a Clipboard API (navigator.clipboard.write), fetch e Blob para injetar a imagem direto no Ctrl + C do usuário.
 
-### 4. Atalho para WhatsApp:
+### 4. Atalho para Compartilhamento:
 Facilita o compartilhamento da URL gerada.
 
 ---
@@ -49,8 +58,14 @@ Facilita o compartilhamento da URL gerada.
 ## 🛠️ Tecnologias e Ferramentas
 
 - **Node.js**
-- **NPM** (nodemon, body-parser, qr-image)
+- **NPM** 
+    - **Body-parser**
+    - **Nodemon**
+    - **Qr-Image**
 - **Express.js**
 - **JavaScript**
 - **HTML5 & CSS3**
 - **Postman**
+- **Web APIs:**
+    - **Navigator.clipboard** (manipulação de Blobs e ClipboardItem)
+    - **Navigator.share** (compartilhamento nativo de objetos File)
